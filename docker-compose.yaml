@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: postgres:14
+    ports:
+      - 32700:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: senator23
+      POSTGRES_PASSWORD: 269121
+      POSTGRES_DB: workshop
